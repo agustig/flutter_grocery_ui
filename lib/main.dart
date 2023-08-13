@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_ui/models/product.dart';
+import 'package:grocery_ui/views/widgets/product_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,16 +13,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
+  MyHomePage({super.key});
+
+  final products = allProduct;
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +31,7 @@ class MyHomePage extends StatelessWidget {
           Icons.menu,
           color: Colors.black,
         ),
+        backgroundColor: Colors.white,
         title: const Center(
           child: Text(
             'My Store',
@@ -74,9 +76,23 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
             ],
-          )
+          ),
         ],
         elevation: 1,
+      ),
+      body: Container(
+        padding: const EdgeInsets.all(10),
+        child: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            mainAxisSpacing: 10,
+            crossAxisSpacing: 10,
+            childAspectRatio: 0.7,
+            crossAxisCount: 2,
+          ),
+          itemBuilder: (context, index) =>
+              ProductWidget(product: products[index]),
+          itemCount: products.length,
+        ),
       ),
     );
   }
