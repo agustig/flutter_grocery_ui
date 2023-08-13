@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_ui/models/product.dart';
+import 'package:grocery_ui/views/pages/product_detail_page.dart';
 
 class ProductWidget extends StatelessWidget {
   const ProductWidget({super.key, required this.product});
@@ -20,33 +21,43 @@ class ProductWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Hero(
-                  tag: product.image,
-                  child: SizedBox(
-                    width: 150,
-                    child: Image.asset(product.image),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProductDetailPage(product: product),
                   ),
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  'USD ${product.price}',
-                  style: const TextStyle(
-                    color: Colors.green,
-                    fontWeight: FontWeight.w600,
+                );
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Hero(
+                    tag: product.image,
+                    child: SizedBox(
+                      width: 150,
+                      child: Image.asset(product.image),
+                    ),
                   ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  product.title,
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
+                  const SizedBox(height: 8),
+                  Text(
+                    'USD ${product.price}',
+                    style: const TextStyle(
+                      color: Colors.green,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
-                ),
-              ],
+                  const SizedBox(height: 4),
+                  Text(
+                    product.title,
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(height: 8),
             const Column(

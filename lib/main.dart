@@ -81,7 +81,7 @@ class MyHomePage extends StatelessWidget {
         elevation: 1,
       ),
       body: Container(
-        padding: const EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             mainAxisSpacing: 10,
