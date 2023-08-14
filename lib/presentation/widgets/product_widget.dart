@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_ui/models/product.dart';
-import 'package:grocery_ui/views/pages/product_detail_page.dart';
+import 'package:grocery_ui/data/models/product_model.dart';
+import 'package:grocery_ui/presentation/pages/product_detail_page.dart';
 
 class ProductWidget extends StatelessWidget {
   const ProductWidget({super.key, required this.product});
 
-  final Product product;
+  final ProductModel product;
 
   @override
   Widget build(BuildContext context) {

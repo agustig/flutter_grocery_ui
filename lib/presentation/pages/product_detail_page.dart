@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_ui/models/product.dart';
+import 'package:grocery_ui/data/models/product_model.dart';
 
 class ProductDetailPage extends StatelessWidget {
   const ProductDetailPage({super.key, required this.product});
-  final Product product;
+  final ProductModel product;
 
   @override
   Widget build(BuildContext context) {

@@ -1,11 +1,11 @@
-class Product {
+class ProductModel {
   final String title;
   final String price;
   final String quantity;
   final String image;
   final String description;
 
-  Product({
+  ProductModel({
     required this.title,
     required this.price,
     required this.quantity,
@@ -14,8 +14,8 @@ class Product {
   });
 }
 
-final List<Product> allProduct = [
-  Product(
+final List<ProductModel> allProduct = [
+  ProductModel(
     title: 'Bayam',
     price: '2.000',
     quantity: '1ikat',
@@ -23,7 +23,7 @@ final List<Product> allProduct = [
     description:
         'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
   ),
-  Product(
+  ProductModel(
     title: 'Alpukat',
     price: '4.000',
     quantity: '1kg',
@@ -31,7 +31,7 @@ final List<Product> allProduct = [
     description:
         'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
   ),
-  Product(
+  ProductModel(
     title: 'Jagung',
     price: '9.500',
     quantity: '1bungkus',
@@ -39,7 +39,7 @@ final List<Product> allProduct = [
     description:
         'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
   ),
-  Product(
+  ProductModel(
     title: 'Kiwi',
     price: '4.500',
     quantity: '1kg',
@@ -47,7 +47,7 @@ final List<Product> allProduct = [
     description:
         'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
   ),
-  Product(
+  ProductModel(
     title: 'Jeruk',
     price: '3.500',
     quantity: '1kg',
@@ -55,7 +55,7 @@ final List<Product> allProduct = [
     description:
         'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
   ),
-  Product(
+  ProductModel(
     title: 'Apel',
     price: '4.500',
     quantity: '1kg',
