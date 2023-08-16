@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_ui/data/models/product_model.dart';
+import 'package:grocery_ui/domain/entities/product.dart';
 
 class ProductDetailPage extends StatelessWidget {
   const ProductDetailPage({super.key, required this.product});
-  final ProductModel product;
+  final Product product;
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +31,8 @@ class ProductDetailPage extends StatelessWidget {
                       ),
                     ),
                     background: Hero(
-                      tag: product.image,
-                      child: Image.asset(product.image),
+                      tag: product.images[0],
+                      child: Image.network(product.images[0]),
                     ),
                   ),
                   expandedHeight: 400,
@@ -59,14 +59,14 @@ class ProductDetailPage extends StatelessWidget {
                                   fontWeight: FontWeight.w700,
                                 ),
                               ),
-                              Text(
-                                ' /${product.quantity}',
-                                style: const TextStyle(
-                                  color: Colors.green,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
+                              // Text(
+                              //   ' /${product.quantity}',
+                              //   style: const TextStyle(
+                              //     color: Colors.green,
+                              //     fontSize: 20,
+                              //     fontWeight: FontWeight.w400,
+                              //   ),
+                              // ),
                             ],
                           ),
                         ),

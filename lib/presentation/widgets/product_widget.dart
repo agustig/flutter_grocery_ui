@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_ui/data/models/product_model.dart';
+import 'package:grocery_ui/domain/entities/product.dart';
 import 'package:grocery_ui/presentation/pages/product_detail_page.dart';
 
 class ProductWidget extends StatelessWidget {
   const ProductWidget({super.key, required this.product});
 
-  final ProductModel product;
+  final Product product;
 
   @override
   Widget build(BuildContext context) {
@@ -34,10 +34,10 @@ class ProductWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Hero(
-                    tag: product.image,
+                    tag: product.images[0],
                     child: SizedBox(
                       width: 150,
-                      child: Image.asset(product.image),
+                      child: Image.asset(product.images[0]),
                     ),
                   ),
                   const SizedBox(height: 8),

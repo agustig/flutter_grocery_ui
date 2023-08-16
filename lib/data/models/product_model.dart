@@ -1,66 +1,63 @@
-class ProductModel {
-  final String title;
-  final String price;
-  final String quantity;
-  final String image;
-  final String description;
+import 'package:equatable/equatable.dart';
+import 'package:grocery_ui/data/models/category_model.dart';
+import 'package:grocery_ui/domain/entities/product.dart';
 
-  ProductModel({
+class ProductModel extends Equatable {
+  final int id;
+  final String title;
+  final int price;
+  final String description;
+  final List<String> images;
+  final String creationAt;
+  final String updatedAt;
+  final CategoryModel category;
+
+  const ProductModel({
+    required this.id,
     required this.title,
     required this.price,
-    required this.quantity,
-    required this.image,
     required this.description,
+    required this.images,
+    required this.creationAt,
+    required this.updatedAt,
+    required this.category,
   });
-}
 
-final List<ProductModel> allProduct = [
-  ProductModel(
-    title: 'Bayam',
-    price: '2.000',
-    quantity: '1ikat',
-    image: 'assets/img1.png',
-    description:
-        'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
-  ),
-  ProductModel(
-    title: 'Alpukat',
-    price: '4.000',
-    quantity: '1kg',
-    image: 'assets/img2.png',
-    description:
-        'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
-  ),
-  ProductModel(
-    title: 'Jagung',
-    price: '9.500',
-    quantity: '1bungkus',
-    image: 'assets/img3.png',
-    description:
-        'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
-  ),
-  ProductModel(
-    title: 'Kiwi',
-    price: '4.500',
-    quantity: '1kg',
-    image: 'assets/img4.png',
-    description:
-        'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
-  ),
-  ProductModel(
-    title: 'Jeruk',
-    price: '3.500',
-    quantity: '1kg',
-    image: 'assets/img5.png',
-    description:
-        'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
-  ),
-  ProductModel(
-    title: 'Apel',
-    price: '4.500',
-    quantity: '1kg',
-    image: 'assets/img6.png',
-    description:
-        'Secara umum sayuran dan buah-buahan merupakan sumber berbagai vitamin, mineral, dan serat pangan. Sebagian vitamin dan mineral yang terkandung dalam sayuran dan buah-buahan berperan untuk membantu proses-proses metabolisme di dalam tubuh, sedangkan antioksidan mampu menangkal senyawa-senyawa hasil oksidasi, radikal bebas, yang mampu menurunkan kondisi kesehatan tubuh',
-  ),
-];
+  factory ProductModel.fromJson(Map<String, dynamic> json) {
+    return ProductModel(
+      id: json['id'],
+      title: json['title'],
+      price: json['price'],
+      description: json['description'],
+      images: List<String>.from(json['images']),
+      creationAt: json['creationAt'],
+      updatedAt: json['updatedAt'],
+      category: CategoryModel.fromJson(json['category']),
+    );
+  }
+
+  Product toEntity() {
+    return Product(
+      id: id,
+      title: title,
+      price: price,
+      description: description,
+      images: images,
+      creationAt: creationAt,
+      updatedAt: updatedAt,
+      category: category.toEntity(),
+    );
+  }
+
+  @override
+  List<Object?> get props => [
+        id,
+        title,
+        price,
+        description,
+        images,
+        creationAt,
+        updatedAt,
+        category,
+      ];
+}

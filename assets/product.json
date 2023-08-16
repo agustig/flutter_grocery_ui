@@ -1,0 +1,218 @@
+[
+  {
+    "id": 216,
+    "title": "Slim Fit Crew Neck Printed T-Shirt",
+    "price": 12,
+    "description": "ewwewewe",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/Z3084AZ_23SP_ER105_01_02.jpg"
+    ],
+    "creationAt": "2023-08-13T17:42:54.000Z",
+    "updatedAt": "2023-08-13T23:22:20.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 217,
+    "title": "Slim Fit Crew Neck Printed T-Shirt",
+    "price": 120,
+    "description": "fgdfdfdf",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/Z3086AZ_23SP_BR341_03_03.jpg"
+    ],
+    "creationAt": "2023-08-13T17:42:55.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 218,
+    "title": "Comfort Fit Crew Neck T-Shirt",
+    "price": 400,
+    "description": "dfdfdfd",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/Z2450AZ_23SP_WT34_02_05.jpg"
+    ],
+    "creationAt": "2023-08-13T17:42:55.000Z",
+    "updatedAt": "2023-08-13T23:22:20.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 219,
+    "title": "Oversize Fit Crew Neck Cotton Premium T-Shirt",
+    "price": 852,
+    "description": "gfghfgfg",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/T3661AZ_23SP_BK81_01_02.jpg"
+    ],
+    "creationAt": "2023-08-13T17:43:03.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 220,
+    "title": "NBA Los Angeles Lakers Licensed Crew Neck T-Shirt",
+    "price": 789,
+    "description": "hkfkgfkgfdkgfkgk",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/A6753AX_23HS_BG662_01_02.jpg"
+    ],
+    "creationAt": "2023-08-13T17:43:03.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 221,
+    "title": "Slim Fit Polo Neck Long Sleeve Cotton Shirt",
+    "price": 274,
+    "description": "description",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/M7180AZ_23SP_KH277_01_03.jpg"
+    ],
+    "creationAt": "2023-08-13T17:43:03.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 222,
+    "title": "Regular Fit Short Sleeve Shirt",
+    "price": 274,
+    "description": "description",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/Z5281AZ_23SM_BN534_02_03.jpg"
+    ],
+    "creationAt": "2023-08-13T17:43:04.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 223,
+    "title": "Slim Fit Polo Collar Poplin Long Sleeve Shirt",
+    "price": 274,
+    "description": "description",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/R4340AZ_23AU_BK27_01_01.jpg"
+    ],
+    "creationAt": "2023-08-13T17:43:04.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 224,
+    "title": "Regular Fit Polo Neck Suede Long Sleeve Shirt",
+    "price": 274,
+    "description": "description",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/T6266AZ_23SP_BG56_03_01.jpg"
+    ],
+    "creationAt": "2023-08-13T17:43:04.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 225,
+    "title": "Slim Fit Long Sleeve Cotton Shirt",
+    "price": 274,
+    "description": "description",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/R1680AZ_23SP_TR157_01_02.jpg"
+    ],
+    "creationAt": "2023-08-13T17:43:05.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 226,
+    "title": "Regular Fit Viscose Printed Short Sleeve Shirt",
+    "price": 274,
+    "description": "description",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/Y2903AZ_23SM_BE509_02_04.jpg"
+    ],
+    "creationAt": "2023-08-13T17:43:05.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  },
+  {
+    "id": 227,
+    "title": "Regular Fit Crew Neck Long Sleeve Shirt",
+    "price": 274,
+    "description": "description",
+    "images": [
+      "https://dfcdn.defacto.com.tr/7/A6788AX_23SM_WT34_01_02.jpg"
+    ],
+    "creationAt": "2023-08-13T17:43:05.000Z",
+    "updatedAt": "2023-08-13T23:22:21.000Z",
+    "category": {
+      "id": 1,
+      "name": "Clothes",
+      "image": "https://picsum.photos/640/640?r=6374",
+      "creationAt": "2023-08-13T17:29:07.000Z",
+      "updatedAt": "2023-08-13T17:29:07.000Z"
+    }
+  }
+]
