@@ -44,4 +44,4 @@ const testProductModel = ProductModel(
 const testCategories = [testCategory];
 const testCategoryModels = [testCategoryModel];
 const testProducts = [testProduct];
-const testProductModels = [testCategoryModel];
+const testProductModels = [testProductModel];
